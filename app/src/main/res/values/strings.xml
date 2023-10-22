@@ -3,5 +3,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="my_text"><u> 202151xxx@iiitvadodara.ac.in</u></string>
+    <string name="name" color="#000000">Name</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="institute_voting_app">INSTITUTE VOTING APP</string>
 
 </resources>

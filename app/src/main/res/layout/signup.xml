@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCEEFF"
+    tools:context=".SignUpPage">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="792dp"
+        android:layout_height="792dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="375dp"
+        android:background="@drawable/login_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/login_pic"
+        app:layout_constraintBottom_toTopOf="@+id/institute_vadodara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695" />
+
+    <TextView
+        android:id="@+id/institute_vadodara"
+        android:layout_width="260dp"
+        android:layout_height="73dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_horizontal|top"
+        android:letterSpacing="0.09"
+        android:fontFamily="@font/signika"
+        android:text="@string/institute_voting_app"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="400"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="@string/name"
+        android:textColorHint="@color/black"
+        app:hintTextColor="#000000"
+        app:boxStrokeColor="#000000"
+        android:paddingBottom="8dp"
+        app:flow_horizontalBias="0.493"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_signup"
+        app:startIconCheckable="false"
+        app:startIconTint="#000000"
+        app:boxBackgroundColor="#FFFFFF"
+        app:startIconDrawable="@drawable/ic_name_foreground">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_edt"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:startIconCheckable="false"
+        app:boxStrokeColor="#000000"
+        app:startIconTint="#000000"
+        app:hintTextColor="#000000"
+        app:boxBackgroundColor="#FFFFFF"
+        android:textColorHint="@color/black"
+        app:startIconDrawable="@drawable/ic_email_foreground"
+        app:suffixText="\@iiitvadodara.ac.in"
+        app:suffixTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_edt"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:textColor="#000000"
+            android:inputType="number"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="53dp"
+            tools:layout_editor_absoluteY="404dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:paddingBottom="8dp"
+        app:endIconMode="password_toggle"
+        app:boxStrokeColor="#000000"
+        app:startIconTint="#000000"
+        app:hintTextColor="#000000"
+        app:endIconTint="#000000"
+        app:boxBackgroundColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        android:textColorHint="@color/black"
+        app:startIconDrawable="@android:drawable/ic_lock_lock">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_edt"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:textColor="#000000"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirm_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password"
+        app:boxStrokeColor="#000000"
+        android:paddingBottom="10dp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="#000000"
+        app:boxBackgroundColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconTint="#000000"
+        app:hintTextColor="#000000"
+        android:textColorHint="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:startIconDrawable="@android:drawable/ic_lock_lock">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirm_password_edt"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:inputType="textPassword"
+            android:textColor="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signin"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#123499"
+        android:elevation="20dp"
+        android:text="@string/sign_in"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.822">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <TextView
+        android:id="@+id/title_signup"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/sign_up"
+        android:textAlignment="center"
+        android:textColor="#00072D"
+        android:textFontWeight="300"
+        android:textSize="35sp"
+        app:layout_constraintTop_toBottomOf="@id/imageView3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="360dp"
+        android:fontFamily="@font/signika"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

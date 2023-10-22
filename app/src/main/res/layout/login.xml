@@ -97,13 +97,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/signin"
+        android:id="@+id/login"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="#123499"
         android:elevation="20dp"
-        android:text="SIGN IN"
+        android:text="LOG IN"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="16dp"
@@ -126,7 +126,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signin"
+        app:layout_constraintTop_toBottomOf="@+id/login"
         app:layout_constraintVertical_bias="0.151" />
 
 
