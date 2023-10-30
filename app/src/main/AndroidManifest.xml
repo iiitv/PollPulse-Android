@@ -14,10 +14,10 @@
         android:theme="@style/Theme.VotingApp"
         tools:targetApi="31" >
         <activity
-            android:name=".dashBoard"
+            android:name=".SignUpPage"
             android:exported="false" />
         <activity
-            android:name=".SignUpPage"
+            android:name=".dashBoard"
             android:exported="true"
             android:parentActivityName=".SignUpPage" >
             <intent-filter>
