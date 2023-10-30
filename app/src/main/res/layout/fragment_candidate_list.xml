@@ -1,14 +1,493 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DCEEFF"
     tools:context=".CandidateListFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constLayoutCandidate"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="60dp"
+        android:background="#0A2472"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/txtCandidateList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:letterSpacing="0.01"
+            android:text="@string/candidate_list"
+            android:textColor="#FFFFFF"
+            android:textFontWeight="200"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/searchBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtCandidateList"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="#FFFFFF"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/candidate3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constLayoutCandidate"
+        app:layout_constraintVertical_bias="0.198">
+
+        <ImageView
+            android:id="@+id/btnCircle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_btn_candidate_select"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCandidate3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/sanjana"
+            android:textColor="#051650"
+            android:textFontWeight="2000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnCircle3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:button="@drawable/ic_btn_candidate_select" />
+
+        <ImageView
+            android:id="@+id/arrow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/candidate2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constLayoutCandidate"
+        app:layout_constraintVertical_bias="0.107">
+
+        <ImageView
+            android:id="@+id/btnCircle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_btn_candidate_select"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCandidate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="12dp"
+            android:text="@string/sanjana"
+            android:textColor="#051650"
+            android:textFontWeight="2000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnCircle2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.666"
+            tools:button="@drawable/ic_btn_candidate_select" />
+
+        <ImageView
+            android:id="@+id/arrow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/candidate1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constLayoutCandidate"
+        app:layout_constraintVertical_bias="0.019">
+
+        <ImageView
+            android:id="@+id/btnCircle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_btn_candidate_select"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCandidate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="12dp"
+            android:text="@string/sanjana"
+            android:textColor="#051650"
+            android:textFontWeight="2000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnCircle1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:button="@drawable/ic_btn_candidate_select" />
+
+        <ImageView
+            android:id="@+id/arrow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/candidate4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constLayoutCandidate"
+        app:layout_constraintVertical_bias="0.376">
+
+        <ImageView
+            android:id="@+id/btnCircle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_btn_candidate_select"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCandidate4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="12dp"
+            android:text="@string/sanjana"
+            android:textColor="#051650"
+            android:textFontWeight="2000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnCircle4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.666"
+            tools:button="@drawable/ic_btn_candidate_select" />
+
+        <ImageView
+            android:id="@+id/arrow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/candidate5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constLayoutCandidate"
+        app:layout_constraintVertical_bias="0.285">
+
+        <ImageView
+            android:id="@+id/btnCircle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_btn_candidate_select"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCandidate5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/sanjana"
+            android:textColor="#051650"
+            android:textFontWeight="2000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnCircle5"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:button="@drawable/ic_btn_candidate_select" />
+
+        <ImageView
+            android:id="@+id/arrow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/candidate6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constLayoutCandidate"
+        app:layout_constraintVertical_bias="0.555">
+
+        <ImageView
+            android:id="@+id/btnCircle6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_btn_candidate_select"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCandidate6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="12dp"
+            android:text="@string/sanjana"
+            android:textColor="#051650"
+            android:textFontWeight="2000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnCircle6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.666"
+            tools:button="@drawable/ic_btn_candidate_select" />
+
+        <ImageView
+            android:id="@+id/arrow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/candidate7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constLayoutCandidate"
+        app:layout_constraintVertical_bias="0.466">
+
+        <ImageView
+            android:id="@+id/btnCircle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_btn_candidate_select"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCandidate7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/sanjana"
+            android:textColor="#051650"
+            android:textFontWeight="2000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnCircle7"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:button="@drawable/ic_btn_candidate_select" />
+
+        <ImageView
+            android:id="@+id/arrow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        style="@style/Divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="1dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/candidate5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/candidate1"
+        app:layout_constraintTop_toBottomOf="@+id/candidate3"
+        tools:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        style="@style/Divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="1dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/candidate2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/candidate1"
+        tools:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        style="@style/Divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="1dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/candidate5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/candidate1"
+        tools:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        style="@style/Divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="1dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/candidate7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/candidate4"
+        tools:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        style="@style/Divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="1dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/candidate4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/candidate5"
+        tools:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        style="@style/Divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="1dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/candidate6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/candidate7"
+        tools:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        style="@style/Divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/candidate6"
+        tools:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
