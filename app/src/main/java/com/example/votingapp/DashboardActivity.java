@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class dashBoard extends AppCompatActivity {
+public class DashboardActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;
 
@@ -15,29 +15,29 @@ public class dashBoard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_dash_board);
+        setContentView(R.layout.activity_dashboard);
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             switch (item.getItemId()) {
                 case R.id.home_screen:
-                    loadFragment(new home_screen());
+                    loadFragment(new HomeFragment());
                     return true;
                 case R.id.candidate_list:
-                    loadFragment(new candidate_list());
+                    loadFragment(new CandidateListFragment());
                     return true;
                 case R.id.election_list:
-                    loadFragment(new electiion_list());
+                    loadFragment(new ElectionListFragment());
                     return true;
                 case R.id.dashboard:
-                    loadFragment(new dash_board());
+                    loadFragment(new DashboardFragment());
                     return true;
                 default:
                     return false;
             }
         });
 
-        loadFragment(new home_screen());
+        loadFragment(new HomeFragment());
     }
 
     private void loadFragment(Fragment fragment) {

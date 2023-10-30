@@ -10,5 +10,34 @@
     <string name="password">Password</string>
     <string name="email">Email</string>
     <string name="institute_voting_app">INSTITUTE VOTING APP</string>
+    <string name="institute_v">INSTITUTE\nVOTING APP</string>
+    <string name="kedar_hi">Hello Kedar !</string>
+    <string name="ongoing_ele">Ongoing Elections</string>
+    <string name="view_all">View All</string>
+    <string name="elections_mod5">Mod5 Elections</string>
+    <string name="vote">Vote for Secretary &amp; Join Secretary</string>
+    <string name="apply_candidate">Apply as Candidate</string>
+    <string name="vote_button">VOTE</string>
+    <string name="completed_ele">Completed Elections</string>
+    <string name="results_view">View Results</string>
+    <string name="candidate_list">Candidate List</string>
+    <string name="sanjana">Sanjana K</string>
+    <string name="election_list">Election List</string>
+    <string name="add_election">Add Election</string>
+    <string name="voted">VOTED !</string>
+    <string name="youare_candidate">You\'re a Candidate !</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="all">All</string>
+    <string name="your_elections">Your Elections</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="completed">Completed</string>
+    <string name="kedar">Kedar Deshmukh</string>
+    <string name="bio">Bio</string>
+    <string name="yourVotes">Your Votes</string>
+    <string name="yourElections">Your Elections</string>
+    <string name="logOut">Log Out</string>
+    <string name="deleteAccount">Delete Account</string>
+    <string name="write">Write something about yourself…</string>
+    <string name="timePeriod">2021-25</string>
 
 </resources>
