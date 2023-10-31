@@ -17,7 +17,7 @@
             android:name=".SignUpPage"
             android:exported="false" />
         <activity
-            android:name=".dashBoard"
+            android:name=".DashboardActivity"
             android:exported="true"
             android:parentActivityName=".SignUpPage" >
             <intent-filter>

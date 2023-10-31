@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link dash_board#newInstance} factory method to
+ * Use the {@link ElectionListFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class dash_board extends Fragment {
+public class ElectionListFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +24,7 @@ public class dash_board extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public dash_board() {
+    public ElectionListFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +34,11 @@ public class dash_board extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment dash_board.
+     * @return A new instance of fragment electiion_list.
      */
     // TODO: Rename and change types and number of parameters
-    public static dash_board newInstance(String param1, String param2) {
-        dash_board fragment = new dash_board();
+    public static ElectionListFragment newInstance(String param1, String param2) {
+        ElectionListFragment fragment = new ElectionListFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +59,6 @@ public class dash_board extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dash_board, container, false);
+        return inflater.inflate(R.layout.fragment_election_list, container, false);
     }
 }
