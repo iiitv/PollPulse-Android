@@ -39,5 +39,8 @@
     <string name="deleteAccount">Delete Account</string>
     <string name="write">Write something about yourself…</string>
     <string name="timePeriod">2021-25</string>
+    <string name="sec">Secretary</string>
+    <string name="jsec">Joint Secretary</string>
+    <string name="submitVote">Submit Vote</string>
 
 </resources>

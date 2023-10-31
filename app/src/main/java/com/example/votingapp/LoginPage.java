@@ -26,9 +26,6 @@ public class LoginPage extends AppCompatActivity{
 
     public void click(View view) {
         Intent intent = new Intent(this, Verification_page.class);
-
         startActivity(intent);
     }
-
-
 }
