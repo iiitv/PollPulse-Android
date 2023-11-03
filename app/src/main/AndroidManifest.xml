@@ -27,7 +27,6 @@
             android:exported="true"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".DashboardActivity"/>
-        <activity android:name=".VotingPage"/>
     </application>
 
 </manifest>
