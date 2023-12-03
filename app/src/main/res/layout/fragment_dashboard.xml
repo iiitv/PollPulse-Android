@@ -69,41 +69,37 @@
         android:id="@+id/kedarDashboard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="86dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="139dp"
-        android:layout_marginBottom="600dp"
+        android:layout_marginEnd="180dp"
 
+        android:layout_marginBottom="2dp"
         android:text="@string/kedar"
         android:textColor="#000000"
         android:textFontWeight="800"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/timePeriod"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constLayoutDashboard"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toEndOf="@+id/circleDashboard"
+        app:layout_constraintTop_toBottomOf="@+id/constLayoutDashboard" />
 
     <TextView
         android:id="@+id/timePeriod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="86dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="150dp"
-        android:layout_marginBottom="595dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
 
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="29dp"
         android:text="@string/timePeriod"
         android:textColor="#6E7B96"
         android:textFontWeight="600"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constLayoutDashboard"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintStart_toEndOf="@+id/circleDashboard"
+        app:layout_constraintTop_toBottomOf="@+id/kedarDashboard" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"

@@ -1,6 +1,8 @@
 package com.example.votingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -17,19 +19,19 @@ public class DashboardActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_dashboard);
 
-        bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             switch (item.getItemId()) {
-                case R.id.home_screen:
+                case R.id.homeFragment:
                     loadFragment(new HomeFragment());
                     return true;
-                case R.id.candidate_list:
+                case R.id.candidateListFragment:
                     loadFragment(new CandidateListFragment());
                     return true;
-                case R.id.election_list:
+                case R.id.electionListFragment:
                     loadFragment(new ElectionListFragment());
                     return true;
-                case R.id.dashboard:
+                case R.id.dashboardFragment:
                     loadFragment(new DashboardFragment());
                     return true;
                 default:
@@ -43,7 +45,7 @@ public class DashboardActivity extends AppCompatActivity {
     private void loadFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.fragment_holder, fragment);
+        transaction.replace(R.id.nav_fragment, fragment);
         transaction.addToBackStack(null);
         transaction.commit();
     }
